@@ -55,6 +55,7 @@ canvas.addEventListener("mouseup", (e) => {
 })
 
 undo.addEventListener("click", (e) => {
+    rectifyEraserPencil();
     if (track > 0) track--;
     // track action
     let data = {
@@ -64,6 +65,7 @@ undo.addEventListener("click", (e) => {
     socket.emit("redoUndo", data);
 })
 redo.addEventListener("click", (e) => {
+    rectifyEraserPencil();
     if (track < undoRedoTracker.length-1) track++;
     // track action
     let data = {
@@ -123,6 +125,7 @@ eraser.addEventListener("click", (e) => {
 })
 
 download.addEventListener("click", (e) => {
+    rectifyEraserPencil();
     let url = canvas.toDataURL();
 
     let a = document.createElement("a");

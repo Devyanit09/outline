@@ -35,6 +35,17 @@ function closeTools() {
     eraserToolCont.style.display = "none";
 }
 
+function rectifyEraserPencil() {
+    if (eraserFlag) {
+        eraserFlag = !eraserFlag;
+        eraserToolCont.style.display = "none";
+    }
+    if (pencilFlag) {
+        pencilFlag = !pencilFlag;
+        pencilToolCont.style.display = "none";
+    }
+}
+
 pencil.addEventListener("click", (e) => {
     pencilFlag = !pencilFlag;
     //true -> show, false -> hide
