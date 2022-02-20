@@ -61,9 +61,11 @@
     "word-wrap": "^1.2.3",
     "ws": "^8.5.0",
     "xml-name-validator": "^4.0.0",
-    "xmlchars": "^2.2.0",
-      "node": "16.13.0",
-      "npm": "8.1.0"
+    "xmlchars": "^2.2.0"
+  },
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
